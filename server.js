@@ -16,13 +16,7 @@ app.get('/Article-one',function(req,res){
     res.sendFile('This is Artcie-one');
 });
 
-app.get('/Article-two',function(req,res){
-    res.sendFile('This is Artcie-two');
-});
 
-app.get('/Article-three',function(req,res){
-    res.sendFile('This is Artcie-three');
-});
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
