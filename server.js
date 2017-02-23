@@ -42,7 +42,7 @@ function createTemplate(data){
                 <hr/>
                 <h3>${heading}</h3>
                 <div>
-                ${date}
+                ${date.toDateStirng()}
                 </div>
                 <div>${content}</div>
             </div>
