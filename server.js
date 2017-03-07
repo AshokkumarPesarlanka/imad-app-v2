@@ -67,6 +67,11 @@ app.get('/:articleName',function(req,res){
    }); 
 });
 
+app.get('/hash/:input',function(req,res){
+   var hashstring=hash(req.params.input);
+   res.send(hashstring);
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
